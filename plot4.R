@@ -15,7 +15,7 @@ points<-1:length(power.days$Time)
 
 par(mfrow=c(2,2))
 
-# We start with copying the code we had for plot1
+# We start with copying the code we had for plot1, except for erasing the "kilowatts" in the ylabel.
 
   with(power.days,plot(points,Global_active_power,type="l",ylab="Global Active Power",xaxt="n",xlab=""))
   axis(side=1,labels=c("Thu","Fri","Sat"),at=c(1,60*24+1,2880))
